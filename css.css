@@ -1,0 +1,78 @@
+body{
+    background-color: #dedede;
+    font-family: Bahnschrift;
+    margin-top: 10em;
+}
+h1 {
+    color: #454545;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+button {
+    background: steelblue;
+    border-radius: 4px;
+    height: 40px;
+    width: 100px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+}
+button:focus {
+    outline: 0;
+}
+button:disabled {
+    background: #666;
+}
+
+button:disabled:hover {
+    background-color: #454545;
+}
+
+#minutes, #seconds {
+    font-size: 40px;
+}
+.bigger {
+    font-size: 40px;
+}
+.button {
+    box-shadow: 0 9px #999;
+}
+    
+.button:hover {background-color: rgb(255, 105, 105)}
+    
+.button:active {
+    background-color: rgb(255, 105, 105);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.timer-container {
+    margin: 2em 20em 2em 20em;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 2em;
+    border-radius: 5px;
+}
+
+input {
+    border: none;
+    border-radius: 5px;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 3em;
+    font-family: Bahnschrift;
+    font-size: 1.5em;
+    color: #656565;
+}
+
+.time-label {
+    background-color: #fff;
+    border-radius: 5px;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 8em;
+    color: #656565;
+}

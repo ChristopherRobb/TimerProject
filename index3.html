@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <script src="timer1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css.css"/>
+</head>
+<body onload='setTimersState()'>
+    <h1>Timer</h1>
+    <div class="timer-container">
+        <div class="time-label"><label id="first-min" class="bigger">00</label><span class='bigger'>:</span><label id="first-sec" class="bigger">00</label></div>
+        <input type='text' id='first-input' placeholder='00:00' onblur='firstTimer.get_input()'/>
+        <!--0--> <button onclick='firstTimer.set_timer()' class='button first'>SET</button>
+        <!--1--> <button onclick='firstTimer.pause_timer()' class='button first'>PAUSE</button>
+        <!--2--> <button onclick='firstTimer.set_timer("countup")' class='button first'>UP</button>
+        <!--3--> <button onclick='firstTimer.set_timer("countdown")' class='button first'>DOWN</button>
+        <!--4--> <button onclick='firstTimer.set_timer("reset")' class='button first' type="reset">RESET</button><br><br>
+    </div>
+
+    <div class="timer-container">
+        <div class="time-label"><label id="second-min" class="bigger">00</label><span class='bigger'>:</span><label id="second-sec" class="bigger">00</label></div>
+        <input type='text' id='second-input' placeholder='00:00' onblur='secondTimer.get_input()'/>
+        <!--0--> <button onclick='secondTimer.set_timer()' class='button second'>SET</button>
+        <!--1--> <button onclick='secondTimer.pause_timer()' class='button second'>PAUSE</button>
+        <!--2--> <button onclick='secondTimer.set_timer("countup")' class='button second'>UP</button>
+        <!--3--> <button onclick='secondTimer.set_timer("countdown")' class='button second'>DOWN</button>
+        <!--4--> <button onclick='secondTimer.set_timer("reset")' class='button second' type="reset">RESET</button><br><br>
+    </div>
+
+    <div class="timer-container">
+        <div class="time-label"><label id="third-min" class="bigger">00</label><span class='bigger'>:</span><label id="third-sec" class="bigger">00</label></div>
+        <input type='text' id='third-input' placeholder='00:00' onblur='thirdTimer.get_input()'/>
+        <!--0--> <button onclick='thirdTimer.set_timer()' class='button third'>SET</button>
+        <!--1--> <button onclick='thirdTimer.pause_timer()' class='button third'>PAUSE</button>
+        <!--2--> <button onclick='thirdTimer.set_timer("countup")' class='button third'>UP</button>
+        <!--3--> <button onclick='thirdTimer.set_timer("countdown")' class='button third'>DOWN</button>
+        <!--4--> <button onclick='thirdTimer.set_timer("reset")' class='button third' type="reset">RESET</button><br><br>
+    </div>
+</body>
+</html>
